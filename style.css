@@ -13,6 +13,7 @@ h1, h2, h3, h4, h5, h6, p { margin-top: 0; }
   /*border: 1px solid black;*/
   margin: 0 auto;
 	background-color: #dddbdb;
+	max-width: 1600px;
 }
 
 /*As all the content of the comtainer are floated left the container collapse.
@@ -66,10 +67,14 @@ This one of the way tackle this problem*/
 }
 
 /*Responsive design for mobile phones*/
-@media screen and (max-width: 480px)
+@media screen and (max-device-width: 480px)
 	{
 		.container {
 			width: 100%;
+		}
+
+		.container > p {
+			font-size: 2.5rem;
 		}
 
 		.image-box{
@@ -78,12 +83,12 @@ This one of the way tackle this problem*/
 		}
 
 		.image-box img{
-	    height: 200px;
+	    height: 500px;
 	  }
 	}
 
 /*Responsive design for tablet*/
-@media (min-width: 480px) and (max-width: 768px)
+@media (min-device-width: 480px) and (max-device-width: 768px)
 	 {
   .container{
     width: 95%;
@@ -95,12 +100,12 @@ This one of the way tackle this problem*/
   }
 
 	.image-box img{
-    height: 220px;
+    height: 400px;
   }
 }
 /*Responsive design for small screen desktops*/
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-device-width: 768px) and (max-device-width: 1024px) {
   .image-box img{
-    height: 250px;
+    height: 300px;
   }
 }
